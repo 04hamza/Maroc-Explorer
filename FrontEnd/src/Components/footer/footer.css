@@ -1,0 +1,100 @@
+.footer {
+    background-color: #f9e7ab;
+    color: #333;
+    padding: 20px 10px 10px;
+    font-family: Arial, sans-serif;
+  }
+.footer-top{
+    padding-bottom: 30px;
+}
+.footer-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+.sectionOne{
+    width: 35%;
+} 
+.sectionOne .title{
+    font-size: 40px;
+    padding: 5px;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 100;
+    margin-bottom: 15px;
+    color: #333;
+} 
+.sectionOne p {
+    font-size: 25px;
+    padding: 5px;
+    line-height: 1.6;
+    color: #333;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 100;
+}
+.footer-section{
+    width: 300px;
+}
+.footer-section .title{
+    font-size: 25px;
+    padding: 10px 5px 5px 5px;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 100;
+    margin-bottom: 15px;
+} 
+.footer-section ul {
+    list-style: none;
+    padding: 5px;
+}
+.footer-section p{
+    font-size: 20px;
+    padding-left: 5px;
+    font-family:"Staatliches", sans-serif;
+}
+.footer-section li {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.footer-section a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 100;
+
+}
+.footer-section li a::after {
+    content: "";
+    display: block;
+    left: 50%;
+    bottom: 0;
+    width: 0px;
+    height: 3px;
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+.footer-section li:hover a::after {
+    width: 50%;
+    left: 0;
+}
+.social{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+  }
+  .social .bi{
+    width: 50px;
+    height: 50px;
+    transition: all .5s;
+  }
+  .social .bi:hover{
+    color: white;
+  }
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #737373;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #999;
+  }

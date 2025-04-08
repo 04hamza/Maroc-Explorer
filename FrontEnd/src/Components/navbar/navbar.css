@@ -1,0 +1,158 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100vw;
+}
+.logo {
+  text-decoration: none;
+  display: flex;
+  width:min-content;
+  align-items: center;
+}
+
+.logo .title {
+  font-family: "Staatliches", sans-serif;
+  font-size: 28px;
+  line-height: 25px;
+  color: #ffffff;
+}
+.logo .image{
+  animation:titleanimation;
+  width: 100px;
+  animation-duration:1.5s;
+  animation-iteration-count: infinite;
+}
+.logo .image img{
+  width: 100%;
+}
+@keyframes titleanimation{
+  0%{
+    transform: rotate(-60deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 25%;
+  justify-content: space-around;
+  padding: 0; 
+}
+
+.nav-links li{
+  padding: 5px;
+}
+.nav-links a,
+.dropdown-toggle {
+  font-family: "Staatliches", sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 25px;
+  cursor: pointer;
+  border-bottom: 4px solid transparent;
+  transition: all 0.3s; 
+}
+.nav-links .li a::after {
+  content: "";
+  display: block;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links .li:hover a::after {
+  width: 100%;
+  left: 0;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown:hover .dropdown-toggle{
+  color: white;
+}
+.nav-links .dropdown-menu {
+  position: absolute;
+  transform: translateX(-60px) !important;
+  list-style: none;
+  padding: 10px;
+  padding-top: 25px;
+  min-width: 300px;
+  z-index: 10;
+  background-color:#ffffff ;
+}
+.dropdown-menu li {
+  padding: 5px 10px;
+}
+.dropdown-menu li a{
+  color: #ffffff;
+}
+.language-selector select {
+  font-size: 25px;
+  font-family: "Staatliches", sans-serif;
+  background: none;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+ border: none;
+}
+.language-selector select option{
+  padding: 10px;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .burger .line {
+    width: 25px;
+    height: 3px;
+    background: #233142;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #ffffff; 
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .nav-links .dropdown-menu {
+    position: static;
+    transform: none;
+    width: 100%;
+    border: none;
+    padding: 0;
+  }
+}

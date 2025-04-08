@@ -1,0 +1,135 @@
+.home{
+    position: relative;
+    width: 100%; 
+    height: min-content;
+}
+.image-container img{
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+}
+.overlay{
+    position: absolute;
+    top: 10px;
+    padding: 10px;
+}
+.overlay .Presentation{
+    margin-top: 40px;
+    padding: 30px;
+}
+.overlay .Presentation .title{
+    font-size: 80px;
+    width: 50%;
+    color: #ffffff;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 100;
+}
+.overlay .Presentation .description{
+    font-size: 20px;
+    font-weight: 600;
+    width: 60%;
+    font-family: "Suwannaphum", serif;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 10px 15px;
+    padding-bottom: 30px;
+}
+.home .presenatation{
+    padding: 5px 5px 40px 5px;
+ }
+.home .presenatation .image{
+    position: absolute;
+    width: 300px;
+    border-radius:5px ;
+    transform: translate(40px,-60px);
+    height: 400px;
+}
+.home .presenatation .image img{
+    width: 100%;
+    border-radius:5px ;
+    height: 100%;
+    object-fit: cover;
+}
+.home .presenatation .text{
+    margin-left: 400px;
+}
+.presenatation .text .title{
+    font-size: 50px;
+    padding: 20px 5px 5px 5px;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+}
+.presenatation .text .title::first-letter{
+    font-size:70px ;
+    color:#f9e7ab ;
+}
+.presenatation .text .info{
+    font-size: 18px;
+    padding: 5px ;
+    width: 98%;
+    font-family: "Suwannaphum", serif;
+    font-weight: 500;
+}
+.home .map{
+    display: flex;
+    padding: 30px 20px;
+    justify-content: space-around;
+}
+.home .map .map-text{
+    width:50%;
+}
+.home .map .map-text h2{
+    font-size: 50px;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+}
+.home .map .map-text h2::first-letter{
+    font-size:70px ;
+    color:#f9e7ab ;
+}
+
+.home .map .map-text p{
+    padding-top: 20px;
+    font-size: 18px;
+    font-family: "Suwannaphum", serif;
+    font-weight: 500;
+}
+.region-list {
+    margin-top: 20px;
+}
+.region-list h3 {
+    font-size: 27px;
+    font-family: "Satisfy", cursive;
+    font-weight: 500;
+    color: black;
+    margin-bottom: 15px;
+}
+.region-list h3::first-letter{
+    font-size:50px ;
+    color:#f9e7ab ;
+}
+.region-list ul {
+    list-style: none;
+    padding: 0;
+  }
+.region-list li {
+    font-size: 18px;
+    padding: 3px 15px;
+    width: 80%;
+}
+.region-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 20px;
+    transition: all 0.3s ;
+    position: relative;
+    width: 200px;
+    transition: all .3s ease-in;
+}
+.region-list li:hover a{
+    color:white;
+}
+
+  
