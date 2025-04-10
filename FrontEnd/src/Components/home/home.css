@@ -1,30 +1,36 @@
-.home{
+.home {
     position: relative;
-    width: 100%; 
+    width: 100%;
     height: min-content;
-}
-.image-container img{
+  }
+  
+  .image-container img {
     width: 100%;
     height: 650px;
     object-fit: cover;
-}
-.overlay{
+  }
+  
+  .overlay {
     position: absolute;
     top: 10px;
     padding: 10px;
-}
-.overlay .Presentation{
+    width: 100%;
+  }
+  
+  .overlay .Presentation {
     margin-top: 40px;
     padding: 30px;
-}
-.overlay .Presentation .title{
+  }
+  
+  .overlay .Presentation .title {
     font-size: 80px;
     width: 50%;
     color: #ffffff;
     font-family: "Staatliches", sans-serif;
     font-weight: 100;
-}
-.overlay .Presentation .description{
+  }
+  
+  .overlay .Presentation .description {
     font-size: 20px;
     font-weight: 600;
     width: 60%;
@@ -34,102 +40,301 @@
     color: #ffffff;
     padding: 10px 15px;
     padding-bottom: 30px;
-}
-.home .presenatation{
+  }
+  
+  .home .presenatation {
     padding: 5px 5px 40px 5px;
- }
-.home .presenatation .image{
+  }
+  
+  .home .presenatation .image {
     position: absolute;
     width: 300px;
-    border-radius:5px ;
-    transform: translate(40px,-60px);
+    border-radius: 5px;
+    transform: translate(40px, -60px);
     height: 400px;
-}
-.home .presenatation .image img{
+  }
+  
+  .home .presenatation .image img {
     width: 100%;
-    border-radius:5px ;
+    border-radius: 5px;
     height: 100%;
     object-fit: cover;
-}
-.home .presenatation .text{
+  }
+  
+  .home .presenatation .text {
     margin-left: 400px;
-}
-.presenatation .text .title{
+  }
+  
+  .presenatation .text .title {
     font-size: 50px;
     padding: 20px 5px 5px 5px;
     font-family: "Satisfy", cursive;
     font-weight: 400;
-}
-.presenatation .text .title::first-letter{
-    font-size:70px ;
-    color:#f9e7ab ;
-}
-.presenatation .text .info{
+  }
+  
+  .presenatation .text .title::first-letter {
+    font-size: 70px;
+    color: #f9e7ab;
+  }
+  
+  .presenatation .text .info {
     font-size: 18px;
-    padding: 5px ;
+    padding: 5px;
     width: 98%;
     font-family: "Suwannaphum", serif;
     font-weight: 500;
-}
-.home .map{
+  }
+  
+  .home .map {
     display: flex;
     padding: 30px 20px;
     justify-content: space-around;
-}
-.home .map .map-text{
-    width:50%;
-}
-.home .map .map-text h2{
+  }
+  
+  .home .map .map-text {
+    width: 60%;
+    padding-right: 20px;
+  }
+  
+  .home .map .map-text h2 {
     font-size: 50px;
     font-family: "Satisfy", cursive;
     font-weight: 400;
-}
-.home .map .map-text h2::first-letter{
-    font-size:70px ;
-    color:#f9e7ab ;
-}
-
-.home .map .map-text p{
+  }
+  
+  .home .map .map-text h2::first-letter {
+    font-size: 70px;
+    color: #f9e7ab;
+  }
+  
+  .home .map .map-text p {
     padding-top: 20px;
     font-size: 18px;
     font-family: "Suwannaphum", serif;
     font-weight: 500;
-}
-.region-list {
+  }
+  .region-list {
     margin-top: 20px;
-}
-.region-list h3 {
+  }
+  .region-list h3 {
     font-size: 27px;
-    font-family: "Satisfy", cursive;
     font-weight: 500;
     color: black;
     margin-bottom: 15px;
-}
-.region-list h3::first-letter{
-    font-size:50px ;
-    color:#f9e7ab ;
-}
-.region-list ul {
+  }
+  .region-list ul {
     list-style: none;
+    background-color: #f9f9f9;
     padding: 0;
   }
-.region-list li {
+  .region-list li {
     font-size: 18px;
-    padding: 3px 15px;
-    width: 80%;
-}
-.region-list a {
+    padding: 15px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .region-list li::after{
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    width: 4px;
+    height: 0px;
+    background-color:#f9e7ab;
+    transition: all 0.3s ease-in-out;
+  }
+  .region-list li:hover::after {
+    height: 100%;
+    bottom: 0;
+  }
+  
+  
+  .region-list li a {
     text-decoration: none;
     color: #333;
     font-weight: 500;
+    width: 100%;
+    display: block;
     font-size: 20px;
-    transition: all 0.3s ;
-    position: relative;
-    width: 200px;
-    transition: all .3s ease-in;
-}
-.region-list li:hover a{
-    color:white;
-}
-
+    transition: all 0.3s ease-in;
+  }
   
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .overlay .Presentation .title {
+      font-size: 60px;
+      width: 70%;
+    }
+  
+    .overlay .Presentation .description {
+      font-size: 18px;
+      width: 80%;
+    }
+  
+    .home .presenatation .image {
+      width: 250px;
+      height: 350px;
+      transform: translate(20px, -40px);
+    }
+  
+    .home .presenatation .text {
+      margin-left: 300px;
+    }
+  
+    .presenatation .text .title {
+      font-size: 40px;
+    }
+  
+    .presenatation .text .title::first-letter {
+      font-size: 60px;
+    }
+  
+    .home .map {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .home .map .map-text {
+      width: 100%;
+    }
+    .home .map .map-text h2 {
+      font-size: 40px;
+    }
+  
+    .home .map .map-text h2::first-letter {
+      font-size: 60px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .image-container img {
+      height: 400px; /* Reduce height on smaller screens */
+    }
+  
+    .overlay .Presentation {
+      margin-top: 20px;
+      padding: 20px;
+    }
+  
+    .overlay .Presentation .title {
+      font-size: 40px;
+      width: 100%;
+    }
+  
+    .overlay .Presentation .description {
+      font-size: 16px;
+      width: 100%;
+    }
+  
+    .home .presenatation {
+      padding: 20px;
+    }
+  
+    .home .presenatation .image {
+      position: static; /* Remove absolute positioning */
+      display: none;
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      transform: none;
+      margin: 0 auto 20px;
+    }
+  
+    .home .presenatation .text {
+      margin-left: 0; /* Remove left margin */
+      text-align: center;
+    }
+  
+    .presenatation .text .title {
+      font-size: 32px;
+    }
+  
+    .presenatation .text .title::first-letter {
+      font-size: 48px;
+    }
+  
+    .presenatation .text .info {
+      font-size: 16px;
+    }
+  
+    .home .map .map-text {
+      width: 100%;
+    }
+  
+    .home .map .map-text h2 {
+      font-size: 32px;
+    }
+  
+    .home .map .map-text h2::first-letter {
+      font-size: 48px;
+    }
+  
+    .home .map .map-text p {
+      font-size: 16px;
+    }
+  
+    .region-list h3 {
+      font-size: 22px;
+    }
+  
+    .region-list h3::first-letter {
+      font-size: 40px;
+    }
+  
+    .region-list li {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .region-list a {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .overlay .Presentation .title {
+      font-size: 30px;
+    }
+  
+    .overlay .Presentation .description {
+      font-size: 14px;
+    }
+  
+    .image-container img {
+      height: 300px;
+    }
+  
+    .presenatation .text .title {
+      font-size: 28px;
+    }
+  
+    .presenatation .text .title::first-letter {
+      font-size: 40px;
+    }
+  
+    .presenatation .text .info {
+      font-size: 14px;
+    }
+  
+    .home .map .map-text h2 {
+      font-size: 28px;
+    }
+  
+    .home .map .map-text h2::first-letter {
+      font-size: 40px;
+    }
+  
+    .region-list h3 {
+      font-size: 20px;
+    }
+  
+    .region-list h3::first-letter {
+      font-size: 35px;
+    }
+  
+    .region-list a {
+      font-size: 16px;
+    }
+  }

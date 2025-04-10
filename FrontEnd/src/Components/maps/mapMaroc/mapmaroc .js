@@ -1,11 +1,11 @@
-import { MapContainer, TileLayer, GeoJSON } from 'react-leaflet';
+import { MapContainer, TileLayer, GeoJSON, Marker,Popup} from 'react-leaflet';
+import {Icon} from "leaflet";
 import 'leaflet/dist/leaflet.css';
 import "./mapmaroc.css"
 import { useEffect, useState } from 'react';
 
 const MapMaroc = () => {
   const [geoData, setGeoData] = useState(null);
-
   useEffect(() => {
     fetch('/data/maroc.geojson') 
       .then(response => response.json())
@@ -18,13 +18,12 @@ const MapMaroc = () => {
     layer.on({
       click: (e) => {
         alert(`Vous avez cliqué sur la région : ${regionName}`);
-        e.target.setStyle({fillColor: '#f9e7ab',fillOpacity: 0.7,color: '#000',})
       },
      });
   };
   return (
     <div className="map-container">
-      <MapContainer center={[31.7917, -7.0926]} zoom={6} style={{ height:"100%",width:'100%'}}>
+      <MapContainer center={[29.4000, -11.0926]} zoom={6} style={{ height:"100%",width:'100%'}}>
         <TileLayer
           url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
           attribution='&copy; OpenStreetMap contributors'

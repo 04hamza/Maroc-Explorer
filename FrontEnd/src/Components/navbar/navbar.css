@@ -114,6 +114,12 @@
   padding: 10px;
   color: black;
 }
+.nav-links .dropdown-menu {
+  background-color: #233142; /* Match hover color */
+}
+.dropdown-menu li a {
+  color: #ffffff; /* Already set, but ensure consistency */
+}
 
 @media (max-width: 768px) {
   .burger {
@@ -154,5 +160,11 @@
     width: 100%;
     border: none;
     padding: 0;
+  }
+  .logo .title {
+    font-size: 20px;
+  }
+  .logo .image {
+    width: 80px;
   }
 }

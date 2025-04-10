@@ -4,6 +4,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion,AnimatePresence } from 'framer-motion';
 import MapMaroc from "../maps/mapMaroc/mapmaroc "
+import Articles from '../articles/articles';
 import './home.css';
 
 const Accueil = () => {
@@ -11,6 +12,33 @@ const Accueil = () => {
     "Tanger-Tétouan-Al Hoceïma", "L'Oriental", "Fès-Meknès", "Rabat-Salé-Kénitra",
     "Béni Mellal-Khénifra", "Casablanca-Settat", "Marrakech-Safi", "Drâa-Tafilalet",
     "Souss-Massa", "Guelmim-Oued Noun", "Laâyoune-Sakia El Hamra", "Dakhla-Oued Ed-Dahab"
+  ];
+  const economicArticles = [
+    { 
+      id: 5, 
+      title: "Le Tourisme à Marrakech : Un Pilier Économique en Pleine Expansion", 
+      image: "https://i.pinimg.com/736x/7e/44/1f/7e441f0fa5c80f6fe335d2b6dc6f0124.jpg", 
+      description: "Moteur économique majeur." 
+    },
+    { 
+      id: 6, 
+      title: "Le Port de Tanger Med : Un Hub Logistique Stratégique en Méditerranée", 
+      image: "https://i.pinimg.com/736x/63/39/4b/63394bc7c63f25d60a367a7e59fb4e3c.jpg", 
+      description: "Hub logistique en Méditerranée." 
+    },
+    { 
+      id: 7, 
+      title: "L’Agriculture dans la Région du Souss : Leader des Exportations d’Agrumes", 
+      image: "https://i.pinimg.com/736x/8c/70/87/8c7087b949e46053ef1d927565d417d8.jpg", 
+      description: "Exportations d’agrumes." 
+    },
+    { 
+      id: 8, 
+      title: "Le Projet d’Énergie Solaire Noor : Vers une Économie Verte et Durable", 
+      image: "https://i.pinimg.com/736x/18/ff/65/18ff65914a7a460fdf8bace58e96f535.jpg", 
+      description: "Projet pour une économie verte." 
+    },
+    { id: 9, title: "Le Secteur Textile de Casablanca : Une Industrie en Croissance Constante", image: "https://i.pinimg.com/736x/41/01/5a/41015a9fbc2564c01e4d79783fea17bd.jpg", description: "Production textile compétitive sur le marché mondial." },
   ];
   return (
     <div className="home">
@@ -78,12 +106,7 @@ const Accueil = () => {
               <h3>Choisissez une Région</h3>
               <ul>
                 {regions.map((region, index) => (
-                  <motion.li
-                    key={index}
-                    initial={{ backgroundColor:"#ffffff"}}
-                    whileHover={{ scale: 1.05,x:50,backgroundColor:"#f9ebbf"}}
-                    transition={{ duration: 0.3,ease:"easeIn"}}
-                  >
+                  <motion.li key={index}>
                     <Link to={`/region/${region.toLowerCase().replace(/\s+/g, '-')}`}>
                       {region}
                     </Link>
@@ -94,6 +117,7 @@ const Accueil = () => {
             </motion.div>
                 <MapMaroc/>
             </div>
+            <Articles title="Perspectives Économiques 2025" subtitle="Découvrez les forces économiques qui façonnent l’avenir du Maroc." articles={economicArticles}/>
        </AnimatePresence>
      </div>
   );
