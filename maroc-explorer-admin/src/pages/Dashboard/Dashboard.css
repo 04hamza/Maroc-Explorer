@@ -1,0 +1,111 @@
+
+.dashboard-container {
+    max-width: 1900px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Ensure AntD components align with RTL */
+  html[dir="rtl"] .dashboard-container {
+    text-align: right;
+  }
+  
+  /* Optional: Override AntD styles for custom theme */
+  .ant-card {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  .space{
+    display: block !important;
+  }
+  .ant-card:hover {
+    transform: translateY(-4px);
+  }
+  .ant-col .ant-card .label{
+    display: flex;
+    align-items: center;
+  }
+  .ant-col .ant-card .label .title{
+    font-size: 25px;
+    margin-left: 5px;
+    font-family: "Staatliches", sans-serif;
+  }
+  .bi{
+   margin: 0px 5px;
+  }
+  .list_item{
+    font-size: 21px;
+    font-family: "Staatliches", sans-serif;
+  }
+  .welcome_title{
+    font-size: 35px;
+    margin-left: 5px;
+    font-family: "Staatliches", sans-serif;
+  }
+  .space .info_space{
+       font-size: 30px;
+       font-weight: 100;
+       font-family: "Staatliches", sans-serif;
+       text-align: center;
+  }
+  
+  .ant-btn-primary {
+    background-color: #005555;
+    border-color: #005555;
+  }
+  
+  .ant-btn-primary:hover {
+    background-color: #003d3d;
+    border-color: #003d3d;
+  }
+  .title_Liens{
+    font-size: 30px;
+    font-family: "Staatliches", sans-serif;
+    display: flex;
+    justify-content: space-between;
+  }
+   .ant-space a button ,.btn-users{
+    width: 100%;
+    padding: 7px !important;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #fcdd77;
+    font-size: 22px;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-family: "Staatliches", sans-serif;
+    transition: all .8s;
+  }
+  .ant-space a button:hover{
+    background-color: white;
+    border-color: #fcdd77;
+    color: #fcdd77;
+  }
+  .btn-users:hover{
+    background-color: white;
+    border-color: #fcdd77;
+    color: #fcdd77;
+  }
+  .list_users_items{
+    display: block !important;
+  }
+  .list_name_users_items {
+    font-family: "Staatliches", sans-serif;
+    font-size: 22px;
+  }
+  .list_info_users_items{
+    font-family: "Staatliches", sans-serif;
+    font-size: 19px;
+  }
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      padding: 10px;
+    }
+  }

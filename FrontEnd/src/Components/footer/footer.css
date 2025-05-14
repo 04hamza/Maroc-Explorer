@@ -5,14 +5,39 @@
     font-family: Arial, sans-serif;
   }
 .footer-top{
-    padding-bottom: 30px;
+    padding:0px 50px 30px 20px;
 }
-.footer-container {
+/* Logo Styles */
+.footer-top a{
+    display: flex;
+    text-decoration: none;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+  }
+.footer-top  a .title{
+    font-family: "Staatliches", sans-serif;
+    font-size: 42px;
+    line-height: 42px;
+    width: 100px;
+    color: #ffffff;
+  }
+.footer-top a .image_footer{
+    width: 100px;
+}
+.footer-top  a .image_footer img {
+    width: 100%;
+  }
+.footer[dir="rtl"] a{
+    flex-direction: row-reverse;
+  }
+.footer-container{
     display: flex;
     width: 100%;
     justify-content: space-between;
     padding-bottom: 60px;
 }
+
 .sectionOne{
     width: 35%;
 } 
@@ -33,7 +58,7 @@
     font-weight: 100;
 }
 .footer-section{
-    width: 300px;
+    width: 330px;
 }
 .footer-section .title{
     font-size: 25px;
@@ -42,7 +67,7 @@
     font-weight: 100;
     margin-bottom: 15px;
 } 
-.footer-section ul {
+.footer-section ul{
     list-style: none;
     padding: 5px;
 }
@@ -55,15 +80,17 @@
     margin-bottom: 10px;
     font-size: 20px;
 }
-.footer-section a {
+.footer-section a ,.footer .contact{
     color: #333;
     text-decoration: none;
     transition: color 0.3s ease;
     font-family: "Staatliches", sans-serif;
     font-weight: 100;
+    cursor: pointer;
+    font-size: 20px;
 
 }
-.footer-section li a::after {
+.footer-section li a::after{
     content: "";
     display: block;
     left: 50%;
@@ -97,4 +124,64 @@
     margin-top: 20px;
     font-size: 14px;
     color: #999;
+  }
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .footer-container{
+      flex-wrap: wrap;
+    }
+    .footer-container .sectionOne{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .footer-container .sectionOne .title{
+      margin-bottom: 5px;
+    }
+    .footer-container .footer-section{
+      width: 30%;
+      margin-top: 30px;
+    }
+    .footer-container .footer-section .bi{
+      width: 40px;
+    }
+  }
+  @media (max-width: 768px){
+    .footer-container{
+      flex-wrap: wrap;
+    }
+    .footer-container .sectionOne{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    .footer-container .sectionOne .title{
+      margin-bottom: 5px;
+    }
+    .footer-container .footer-section{
+      width: 30%;
+      margin-top: 30px;
+    }
+    .footer-container .footer-section .bi{
+      width: 40px;
+    }
+    .footer-section .title{
+      font-size: 20px;
+      margin-bottom: 10px;
+  } 
+  .footer-section p{
+      font-size: 15px;
+  }
+  .footer-section li {
+      margin-bottom: 5px;
+      font-size: 15px;
+  }
+  .footer-section a ,.footer .contact{
+      font-size: 15px;
+  
+  }
+  .footer-top  a .title{
+    font-size: 30px;
+    line-height: 30px;
+  }
+.footer-top a .image_footer{
+    width: 80px;
+}
   }

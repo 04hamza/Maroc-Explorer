@@ -1,0 +1,109 @@
+.users-container {
+  padding: 20px;
+  min-width: 1400px;
+  margin: 0 auto;
+  font-family: "Staatliches", sans-serif;
+}
+.users-container td ,.users-container th {
+   font-family: "Staatliches", sans-serif;
+   font-size: 21px;
+   font-weight: 100 !important;
+}
+.users-container th{
+    font-size: 25px;
+}
+.users-container .ant-btn{
+    background-color: #fcd839;
+    height: 50px;
+    min-width: 100px;
+    max-width: 200px;
+    font-size: 22px;
+    font-family: "Staatliches", sans-serif;
+    border: none;
+}
+.users-container .ant-btn:hover{
+    background-color: #fcd218 !important;
+}
+.users-container .ant-btn .view{
+  background-color: white !important;
+  border: 1px solid #f8da5b !important;
+  color: #f8da5b !important;
+}
+.users-container .btn , .modal-button{
+  border: none;
+  padding: 5px 10px;
+  min-width: 100px;
+  margin: 0 4px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all .7s;
+}
+.users-container .view{
+     background-color: white;
+  border: 1px solid #55968f;
+  color: #55968f;
+}
+.users-container .delete{
+background-color: white;
+  border: 1px solid #e46161;
+  color: #e46161;
+}
+.users-container .edit{
+    background-color: white;
+  border: 1px solid #5585b5;
+  color: #5585b5;
+}
+
+.users-container .view:hover{
+  background-color: #55968f;
+  border-color: white;
+  color: white;
+}
+.users-container .delete:hover{
+background-color: #e46161;
+ border-color: white;
+  color: white;
+}
+.users-container .edit:hover{
+  background-color: #5585b5;
+  border-color: white;
+  color: white;
+}
+.custom-form{
+    font-family: "Staatliches", sans-serif;
+    border: none; 
+}
+.custom-form label{
+   margin-bottom: 0px;
+   font-size: 17px;
+}
+.custom-form .error{
+  color: #e46161;
+}
+.custom-form .form-actions{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.custom-form .form-actions button , .modal-button{
+  font-size: 22px;
+  padding: 5px;
+  width: 100%;
+  margin-right: 5px;
+  border: none;
+  background-color: #f8da5b;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: all .7s;
+}
+.modal-button{
+ width: 20%;
+ font-family: "Staatliches", sans-serif;
+}
+.custom-form .form-actions button:hover{
+  background-color: #fcd218;
+}
+
+
+

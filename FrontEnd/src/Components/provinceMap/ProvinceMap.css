@@ -1,0 +1,19 @@
+.province-map-container{
+    padding: 5px;
+    width: 50%;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    }
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .province-map-container {
+      height: 700px;
+      width: 100%;
+    }
+  }
+  @media (max-width: 768px){
+    .province-map-container {
+      height: 700px;
+      width: 100%;
+    }
+  }

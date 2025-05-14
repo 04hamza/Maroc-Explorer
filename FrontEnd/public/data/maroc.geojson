@@ -270,7 +270,7 @@
       },
       "properties": {
         "cartodb_id": 1,
-        "region": "Laayoune-Saguia Hamra"
+        "region": "laayoune-sakia-el-hamra"
       }
     },
     {
@@ -1134,7 +1134,7 @@
       },
       "properties": {
         "cartodb_id": 11,
-        "region": "Dakhla-Oued Eddahab"
+        "region": "dakhla-oued-ed-dahab"
       }
     },
     {
@@ -2430,7 +2430,7 @@
       },
       "properties": {
         "cartodb_id": 8,
-        "region": "Daraa-Tafilelt"
+        "region": "draa-tafilalet"
       }
     },
     {

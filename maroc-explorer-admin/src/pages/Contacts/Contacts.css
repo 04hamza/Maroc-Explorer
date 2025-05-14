@@ -1,0 +1,135 @@
+.contacts-container {
+  padding: 20px;
+  min-width: 1400px;
+  margin: 0 auto;
+  font-family: "Staatliches", sans-serif;
+}
+.contacts-container button{
+   font-family: "Staatliches", sans-serif;
+   font-size: 21px;
+   padding: 20px;
+}
+.contacts-container td ,.contacts-container th {
+   font-family: "Staatliches", sans-serif;
+   font-size: 21px;
+}
+.contacts-container th{
+   font-family: "Staatliches", sans-serif;
+   font-size: 21px;
+   font-weight: 500 !important;
+}
+
+.title_table {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  font-family: "Staatliches", sans-serif;
+}
+
+.pagination {
+  margin-top: 16px;
+  display: flex;
+   font-family: "Staatliches", sans-serif;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pagination-info {
+  font-size: 1rem;
+  color: #333;
+}
+
+.view-content p {
+  margin: 8px 0;
+  font-family: "Staatliches", sans-serif;
+}
+
+.view-content strong {
+  margin-right: 8px;
+   font-family: "Staatliches", sans-serif;
+}
+.contacts-container .view{
+  background-color:#55968f;
+  color: white;
+  transition: all .7s;
+}
+.contacts-container .view:hover{
+  background-color: #3b8079 !important;
+}
+.contacts-container .delete{
+  background-color:#e46161;
+  color: white;
+   transition: all .7s;
+}
+.contacts-container .delete:hover{
+  background-color: #da4949 !important;
+}
+
+.contacts-container .pagination-button{
+  background-color:#f8da5b;
+   font-family: "Staatliches", sans-serif;
+   font-size: 21px;
+   padding: 20px;
+  color: white;
+  transition: all .7s;
+}
+.contacts-container .pagination-button:hover{
+  background-color: #fcd839 !important;
+  color: white;
+}
+.contact-view{
+  background-color: #fcd839;
+  padding: 5px 10px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-family: "Staatliches", sans-serif;
+  font-size: 25px;
+  transition: all .8s;
+}
+.contact-view:hover{
+  background-color: #fcd00d !important;
+  color: white !important;
+}
+.search-bar{
+   font-family: "Staatliches", sans-serif !important;
+}
+.model-content{
+    min-width: 700px !important;
+}
+.contacts-container textarea{
+   font-family: "Staatliches", sans-serif !important;
+   font-size: 26px !important;
+   font-weight: 100 !important;
+}
+
+
+
+/* RTL Support */
+html[dir='rtl'] .contacts-container {
+  text-align: right;
+}
+
+html[dir='rtl'] .title_table {
+  text-align: right;
+}
+
+html[dir='rtl'] .pagination {
+  direction: rtl;
+}
+
+html[dir='rtl'] .view-content p {
+  text-align: right;
+}
+.reply-form {
+    margin-top: 16px;
+}
+.reply-form .ant-form-item {
+    margin-bottom: 16px;
+}
+.reply-form .ant-btn {
+    min-width: 100px;
+}
+html[dir='rtl'] .reply-form .ant-form-item-label {
+    text-align: right;
+}

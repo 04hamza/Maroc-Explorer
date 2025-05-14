@@ -1,0 +1,42 @@
+.commun{
+    padding: 5px;
+}
+.commun .presentation{
+    padding: 20px;
+    display: flex;
+}
+.commun .presentation .image{
+    width: 25%;
+    border-radius: 5px;
+    height: 500px;
+    overflow: hidden;
+}
+.commun .presentation .image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    transition: all .8s;
+}
+.commun .presentation .image:hover img{
+    transform: scale(1.2) rotate(10deg);
+}
+.commun .presentation .content{
+    padding:10px 40px 10px 10px !important;
+    width: 75%;
+}
+.commun .presentation .content .title{
+    font-size: 45px;
+    font-family: "Satisfy", cursive;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.commun .presentation .content .text{
+    font-size: 26px;
+    text-align: center;
+    font-family: "Staatliches", sans-serif !important;
+    font-weight: 100;
+}
+.commun .Key_Statistics_title{
+    padding-left: 20px;
+}

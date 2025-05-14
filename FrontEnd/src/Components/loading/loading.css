@@ -1,0 +1,41 @@
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    margin: 0;
+}
+.lok {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.lok div {
+    width: 40px;
+    height: 40px;
+    background-color: #f9e7ab;
+    border-radius: 50%;
+    animation-name: loadi;
+    animation-duration: .6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+}
+
+.lok .two {
+    animation-delay: 0.15s;
+}
+
+.lok .three {
+    animation-delay: 0.3s;
+}
+@keyframes loadi {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0.5;
+        transform: translateY(20px);
+    }
+}

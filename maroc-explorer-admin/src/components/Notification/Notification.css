@@ -1,0 +1,56 @@
+.notification {
+    position: absolute;
+    left: 50%;
+     margin-left: -250px;
+    width: 500px;
+    padding: 15px;
+    border-radius: 3px;
+    background-color: white !important;
+    font-family: "Staatliches", sans-serif;
+    font-size: 25px;
+    z-index: 2000;
+  } 
+  
+  .notification.success {
+    background-color: #e6f4ea;
+    border: 1px solid  #55968f;
+    color:  #55968f;
+  }
+  
+  .notification.error {
+    background-color: #ffebee;
+    border: 1px solid #e46161;
+    color: #e46161;
+  }
+  
+  .notification.info {
+    background-color: #e3f2fd;
+    border: 1px solid #f8da5b;
+    color: #f8da5b;
+  }
+  
+  .notification-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .notification-icon .bi{
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .notification p {
+    margin: 0;
+    flex: 1;
+  }
+  
+  .notification-close {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: inherit;
+    padding: 0;
+  }

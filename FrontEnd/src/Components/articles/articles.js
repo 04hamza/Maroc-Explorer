@@ -4,7 +4,8 @@ import { motion } from 'framer-motion';
 import './articles.css';
 
 const Articles = ({ title, subtitle, articles }) => {
-  return (
+
+  return articles.length>0?
     <div className="articles">
       <h2>{title}</h2>
       <p className="subtitle">{subtitle}</p>
@@ -21,8 +22,8 @@ const Articles = ({ title, subtitle, articles }) => {
           </div>
         ))}
       </div>
-    </div>
-  );
+    </div>:""
+
 };
 
 export default Articles;

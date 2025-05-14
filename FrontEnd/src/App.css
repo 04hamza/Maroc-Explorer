@@ -1,4 +1,35 @@
 .App {
   font-family: "Roboto", sans-serif;
 }
+::selection{
+  background-color:  #f9e7ab;;
+}
+.error-page{
+  height: 800px;
+}
+.error-page h2{
+  font-size: 40px;
+  font-family: "Staatliches", sans-serif !important;
+  margin-top: 100px;
+  font-weight: 100;
+}
+.error-page p{
+  font-size: 25px !important;
+  font-family: "Staatliches", sans-serif !important;
+  margin-top: 10px;
+  font-weight: 100;
+}
+.error-page .button-route{
+  padding: 20px;
+  font-size: 20px;
+  font-family: "Staatliches", sans-serif !important;
+  border: none;
+  background-color: #f9e7ab;
+  width: 50%;
+  border-radius: 5px;
+  transition: all.8s;
+}
+.error-page button:hover{
+  background-color: #f8d564;
+}
 

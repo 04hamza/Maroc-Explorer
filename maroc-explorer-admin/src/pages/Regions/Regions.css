@@ -1,0 +1,351 @@
+.regions-container {
+  max-width: 1800px;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: "Staatliches", sans-serif;
+}
+
+.regions-container[dir="rtl"] {
+  text-align: right;
+}
+
+.regions-container .title_table {
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+
+.regions-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.regions-table th,
+.regions-table td {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  text-align: left;
+  height: 70px;
+  font-size: 25px;
+}
+
+.regions-table[dir="rtl"] th,
+.regions-table[dir="rtl"] td {
+  text-align: right;
+}
+
+.regions-table th {
+  background-color: #fcdd77;
+  color: #000;
+  font-weight: 100;
+}
+
+.regions-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.regions-table .td-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.regions-table .td-actions button {
+  flex: 1;
+}
+
+.add-button {
+  background-color: #fcdd77;
+  border: none;
+  min-width: 200px;
+  height: 50px;
+  font-size: 25px;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #000;
+  transition: all .7s;
+  border-radius: 4px;
+}
+
+.add-button:hover {
+  background-color: #fad051;
+}
+
+.action-button {
+  border: none;
+  padding: 8px 12px;
+  margin: 0 4px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.action-button.view {
+  background-color: white;
+  border: 1px solid #55968f;
+  color: #55968f;
+}
+
+.action-button.edit {
+  background-color: white;
+  border: 1px solid #5585b5;
+  color: #5585b5;
+  font-size: 20px;
+}
+
+.action-button.delete {
+  background-color: white;
+  border: 1px solid #e46161;
+  color: #e46161;
+}
+.action-button.provinces{
+  background-color: white;
+  border: 1px solid #f8da5b;
+  color: #f8da5b;
+}
+form label .bi{
+  color: #fad051;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  max-width: 900px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.modal-content h3 {
+  color: #fcdd77;
+  font-size: 30px;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  font-size: 23px;
+}
+
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 22px;
+}
+
+form input {
+  height: 60px;
+}
+
+form textarea {
+  height: 200px;
+}
+
+.translation,
+.section,
+.section-translation {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.modal-content h4 {
+  margin-top: 10px;
+  color: #fad051;
+}
+
+.remove-button {
+  background-color: #e46161;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+}
+
+.form-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.submit-button {
+  background-color: #fcdd77;
+  border: none;
+  min-width: 200px;
+  height: 50px;
+  font-size: 25px;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  color: #000;
+  transition: all .7s;
+  border-radius: 4px;
+}
+
+.cancel-button {
+  background-color: #ccc;
+  border: none;
+  min-width: 200px;
+  height: 50px;
+  font-size: 25px;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  color: #000;
+  transition: all .7s;
+  border-radius: 4px;
+}
+
+.submit-button:hover {
+  background-color: #fad051;
+}
+
+.cancel-button:hover {
+  background-color: #b8b8b8;
+}
+
+.regions-container .error {
+  text-align: center;
+  padding: 20px;
+  color: #f44336;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pagination-button {
+  background-color: #fcdd77;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 20px;
+  color: #000;
+  transition: all 0.3s;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background-color: #fad051;
+}
+
+.pagination-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination-info {
+  font-size: 20px;
+  color: #000;
+}
+
+.view-content {
+  font-size: 22px;
+}
+
+.view-content p {
+  margin: 10px 0;
+}
+
+.view-content strong {
+  color: #000;
+}
+
+.view-content a {
+  color: #55968f;
+  text-decoration: underline;
+}
+
+.view-content .section {
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+/* Loading spinner */
+.loading-spinner {
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #005555;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+.view-content p{
+  margin-bottom: 5px;
+  padding: 5px;
+}
+.image strong,
+p strong{
+   font-weight: 100;
+   margin-right: 20px;
+   color: #b8b8b8 !important;
+   padding: 2px;
+   border-radius: 3px;
+}
+.search-div{
+  display: inline;
+}
+.bi-div{
+   display: inline;
+}
+.bi-div .bi{
+  width: 20px;
+}
+.search-bar {
+  width: 400px;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 50px;
+  margin-right: 10px;
+  font-size: 25px;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+}
+.error-message{
+  margin-top: 5px;
+  color: #e46161;
+  animation: showederror .5s ;
+}
+@keyframes showederror {
+  from{
+      color: #f9f9f9;
+  }
+  to{
+     color: #e46161;
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
